@@ -1,0 +1,30 @@
+2018-03-01 13:29:07.099  INFO 46638 --- [main] com.example.demo.LoggerTest              : Starting LoggerTest on macdeMacBook-Air.local with PID 46638 (started by mac in /Users/mac/idea-workspace/sell)
+2018-03-01 13:29:07.101  INFO 46638 --- [main] com.example.demo.LoggerTest              : No active profile set, falling back to default profiles: default
+2018-03-01 13:29:07.341  INFO 46638 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3a44431a: startup date [Thu Mar 01 13:29:07 CST 2018]; root of context hierarchy
+2018-03-01 13:29:13.059  INFO 46638 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3a44431a: startup date [Thu Mar 01 13:29:07 CST 2018]; root of context hierarchy
+2018-03-01 13:29:13.438  INFO 46638 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-01 13:29:13.441  INFO 46638 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-01 13:29:13.541  INFO 46638 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-01 13:29:13.541  INFO 46638 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-01 13:29:13.698  INFO 46638 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-01 13:29:14.176  INFO 46638 --- [main] com.example.demo.LoggerTest              : Started LoggerTest in 9.235 seconds (JVM running for 11.268)
+2018-03-01 13:29:14.312  INFO 46638 --- [main] com.example.demo.LoggerTest              : name: firstpassword: 1234556
+2018-03-01 13:29:14.313  INFO 46638 --- [main] com.example.demo.LoggerTest              : name: first, password: 1234556
+2018-03-01 13:29:14.316  INFO 46638 --- [main] com.example.demo.LoggerTest              : name: first, password: 1234556, day: 1831
+2018-03-01 13:29:14.317 ERROR 46638 --- [main] com.example.demo.LoggerTest              : error
+2018-03-01 13:29:14.330  INFO 46638 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3a44431a: startup date [Thu Mar 01 13:29:07 CST 2018]; root of context hierarchy
+2018-03-01 13:34:47.015  INFO 46690 --- [main] com.example.demo.LoggerTest              : Starting LoggerTest on macdeMacBook-Air.local with PID 46690 (started by mac in /Users/mac/idea-workspace/sell)
+2018-03-01 13:34:47.019  INFO 46690 --- [main] com.example.demo.LoggerTest              : No active profile set, falling back to default profiles: default
+2018-03-01 13:34:47.147  INFO 46690 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3a44431a: startup date [Thu Mar 01 13:34:47 CST 2018]; root of context hierarchy
+2018-03-01 13:34:51.203  INFO 46690 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3a44431a: startup date [Thu Mar 01 13:34:47 CST 2018]; root of context hierarchy
+2018-03-01 13:34:51.389  INFO 46690 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-01 13:34:51.391  INFO 46690 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-01 13:34:51.651  INFO 46690 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-01 13:34:51.652  INFO 46690 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-01 13:34:51.772  INFO 46690 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-01 13:34:52.256  INFO 46690 --- [main] com.example.demo.LoggerTest              : Started LoggerTest in 7.177 seconds (JVM running for 10.006)
+2018-03-01 13:34:52.413  INFO 46690 --- [main] com.example.demo.LoggerTest              : name: firstpassword: 1234556
+2018-03-01 13:34:52.413  INFO 46690 --- [main] com.example.demo.LoggerTest              : name: first, password: 1234556
+2018-03-01 13:34:52.417  INFO 46690 --- [main] com.example.demo.LoggerTest              : name: first, password: 1234556, day: 1831
+2018-03-01 13:34:52.418 ERROR 46690 --- [main] com.example.demo.LoggerTest              : error
+2018-03-01 13:34:52.427  INFO 46690 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3a44431a: startup date [Thu Mar 01 13:34:47 CST 2018]; root of context hierarchy

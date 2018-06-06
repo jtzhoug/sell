@@ -1,0 +1,53 @@
+{
+  "errno": 0,
+  "data": {
+    "name": "好客来酒店",
+    "description": "homein",
+    "deliveryTime": 38,
+    "score": 4.2,
+    "serviceScore": 4.1,
+    "foodScore": 4.3,
+    "rankRate": 69.2,
+    "minPrice": 0,
+    "deliveryPrice": 0,
+    "ratingCount": 24,
+    "sellCount": 90,
+    "bulletin": "感受家的温暖，为您提供衣物清洗，预订餐品等服务，祝您生活愉快",
+    "supports": [
+      {
+        "type": 0,
+        "description": "在线支付满250减15"
+      },
+      {
+        "type": 1,
+        "description": "服务折扣多多"
+      },
+      {
+        "type": 2,
+        "description": "热销榜推荐"
+      },
+      {
+        "type": 3,
+        "description": "本酒店支持发票,请下单写好发票抬头"
+      },
+      {
+        "type": 4,
+        "description": "你的服务，我来保证"
+      }
+    ],
+    "avatar": "http://localhost:8081/sell/img/food1.jpeg",
+    "pics": [
+
+      "http://localhost:8081/sell/img/food4.jpg",
+      "http://localhost:8081/sell/img/food3.jpg",
+      "http://localhost:8081/sell/img/food1.jpeg",
+      "http://localhost:8081/sell/img/food2.jpg"
+    ],
+    "infos": [
+      "该商家支持发票,请下单写好发票抬头",
+      "品类:酒店服务",
+      "浙江大学宁波理工学院",
+      "营业时间:24小时"
+    ]
+  }
+}

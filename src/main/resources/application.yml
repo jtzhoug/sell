@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sell?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 950930
+
+    driver-class-name: com.mysql.jdbc.Driver
+#  level: debug
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  jackson:
+    default-property-inclusion: non_null
+server:
+  context-path: /sell
+  port: 8081
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+##  path: /Users/mac/idea-workspace/sell/var/log/tomcat
+##  %d 日期 #msg%n日志信息 换行
+#  file: /Users/mac/idea-workspace/sell/var/log/tomcat/sell.log
+#  level: debug
+#
+

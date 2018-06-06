@@ -1,0 +1,15 @@
+2018-03-01 13:25:28.898  INFO 46505 --- [main] com.example.demo.LoggerTest              : Starting LoggerTest on macdeMacBook-Air.local with PID 46505 (started by mac in /Users/mac/idea-workspace/sell)
+2018-03-01 13:25:28.901  INFO 46505 --- [main] com.example.demo.LoggerTest              : No active profile set, falling back to default profiles: default
+2018-03-01 13:25:29.115  INFO 46505 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6e0f5f7f: startup date [Thu Mar 01 13:25:29 CST 2018]; root of context hierarchy
+2018-03-01 13:25:32.480  INFO 46505 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6e0f5f7f: startup date [Thu Mar 01 13:25:29 CST 2018]; root of context hierarchy
+2018-03-01 13:25:32.721  INFO 46505 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-01 13:25:32.727  INFO 46505 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-01 13:25:32.853  INFO 46505 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-01 13:25:32.853  INFO 46505 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-01 13:25:33.084  INFO 46505 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-01 13:25:33.421  INFO 46505 --- [main] com.example.demo.LoggerTest              : Started LoggerTest in 6.076 seconds (JVM running for 8.498)
+2018-03-01 13:25:33.514  INFO 46505 --- [main] com.example.demo.LoggerTest              : name: firstpassword: 1234556
+2018-03-01 13:25:33.515  INFO 46505 --- [main] com.example.demo.LoggerTest              : name: first, password: 1234556
+2018-03-01 13:25:33.517  INFO 46505 --- [main] com.example.demo.LoggerTest              : name: first, password: 1234556, day: 1831
+2018-03-01 13:25:33.518 ERROR 46505 --- [main] com.example.demo.LoggerTest              : error
+2018-03-01 13:25:33.527  INFO 46505 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6e0f5f7f: startup date [Thu Mar 01 13:25:29 CST 2018]; root of context hierarchy

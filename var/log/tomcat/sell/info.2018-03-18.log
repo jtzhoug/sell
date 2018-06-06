@@ -1,0 +1,22 @@
+Closing org.springframework.web.context.support.GenericWebApplicationContext@2364305a: startup date [Wed Mar 14 13:46:20 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Closing org.springframework.web.context.support.GenericWebApplicationContext@4ae33a11: startup date [Wed Mar 14 14:03:09 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Closing org.springframework.web.context.support.GenericWebApplicationContext@55e8ec2f: startup date [Wed Mar 14 14:04:58 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Closing org.springframework.web.context.support.GenericWebApplicationContext@741b3bc3: startup date [Thu Mar 15 15:54:51 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+SQL Error: 0, SQLState: 08S01
+HHH000327: Error performing load command : org.hibernate.exception.JDBCConnectionException: could not extract ResultSet
+Closing org.springframework.web.context.support.GenericWebApplicationContext@55e8ec2f: startup date [Thu Mar 15 15:58:22 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Closing org.springframework.web.context.support.GenericWebApplicationContext@29ef6856: startup date [Thu Mar 15 15:56:29 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Closing org.springframework.web.context.support.GenericWebApplicationContext@65a4798f: startup date [Fri Mar 16 13:30:40 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Closing org.springframework.web.context.support.GenericWebApplicationContext@65a4798f: startup date [Fri Mar 16 13:28:16 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+SQL Error: 0, SQLState: 08S01
+HHH000327: Error performing load command : org.hibernate.exception.JDBCConnectionException: could not extract ResultSet
+Closing org.springframework.web.context.support.GenericWebApplicationContext@55e8ec2f: startup date [Thu Mar 15 16:07:46 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'

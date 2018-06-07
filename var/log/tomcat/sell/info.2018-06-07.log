@@ -1,0 +1,909 @@
+Starting SellApplication on macdeMacBook-Air.local with PID 87787 (/Users/mac/idea-workspace/sell/target/classes started by mac in /Users/mac/idea-workspace/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52ffae45: startup date [Thu Jun 07 15:23:45 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c6d10448] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8081 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.27
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 3764 ms
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapping filter: 'springSecurityFilterChain' to: [/*]
+Mapping servlet: 'dispatcherServlet' to [/]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.example.demo.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.example.demo.controller.BuyerOrderController.create(com.example.demo.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.example.demo.VO.ResultVO<com.example.demo.dto.OrderDTO> com.example.demo.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/createCloth],methods=[POST]}" onto public com.example.demo.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.example.demo.controller.BuyerOrderController.createCloth(com.example.demo.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.example.demo.VO.ResultVO<com.example.demo.dto.OrderDTO> com.example.demo.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerProductController.list()
+Mapped "{[/buyer/product/clist],methods=[GET]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerProductController.clist()
+Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.LoginController.login()
+Mapped "{[/seller/category/list]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.save(com.example.demo.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/clist]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.clist(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.modify(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/cmodify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.cmodify(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/csave]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.csave(com.example.demo.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.save(com.example.demo.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.security.core.token.Token)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.save(com.example.demo.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52ffae45: startup date [Thu Jun 07 15:23:45 CST 2018]; root of context hierarchy
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+Creating filter chain: Ant [pattern='/**', OPTIONS], []
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@605c2285, org.springframework.security.web.context.SecurityContextPersistenceFilter@54be1dde, org.springframework.security.web.header.HeaderWriterFilter@18331ee5, org.springframework.security.web.authentication.logout.LogoutFilter@2a65c4d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@185125c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17f574ad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@338e91f0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2955f9d1, org.springframework.security.web.session.SessionManagementFilter@32c4a23f, org.springframework.security.web.access.ExceptionTranslationFilter@54e979cd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61e891dc]
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d21a359, org.springframework.security.web.context.SecurityContextPersistenceFilter@13b687b3, org.springframework.security.web.header.HeaderWriterFilter@7283e922, org.springframework.security.web.authentication.logout.LogoutFilter@1e676c6f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@63f540c4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6789c71d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a2ee837, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61e14a3c, org.springframework.security.web.session.SessionManagementFilter@703ac8a, org.springframework.security.web.access.ExceptionTranslationFilter@5cc511c1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46885700]
+Unable to start LiveReload server
+Registering beans for JMX exposure on startup
+Starting beans in phase 2147483647
+Context refreshed
+Found 1 custom documentation plugin(s)
+Scanning for api listing references
+Initializing ProtocolHandler ["http-nio-8081"]
+Starting ProtocolHandler ["http-nio-8081"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8081 (http)
+Started SellApplication in 15.097 seconds (JVM running for 16.595)
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52ffae45: startup date [Thu Jun 07 15:23:45 CST 2018]; root of context hierarchy
+Stopping beans in phase 2147483647
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on macdeMacBook-Air.local with PID 88001 (/Users/mac/idea-workspace/sell/target/classes started by mac in /Users/mac/idea-workspace/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2d1ec9a1: startup date [Thu Jun 07 15:25:00 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$be4bd2aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8081 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.27
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 4853 ms
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapping filter: 'springSecurityFilterChain' to: [/*]
+Mapping servlet: 'dispatcherServlet' to [/]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.example.demo.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.example.demo.controller.BuyerOrderController.create(com.example.demo.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.example.demo.VO.ResultVO<com.example.demo.dto.OrderDTO> com.example.demo.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/createCloth],methods=[POST]}" onto public com.example.demo.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.example.demo.controller.BuyerOrderController.createCloth(com.example.demo.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.example.demo.VO.ResultVO<com.example.demo.dto.OrderDTO> com.example.demo.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerProductController.list()
+Mapped "{[/buyer/product/clist],methods=[GET]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerProductController.clist()
+Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.LoginController.login()
+Mapped "{[/seller/category/list]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.save(com.example.demo.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/clist]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.clist(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.modify(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/cmodify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.cmodify(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/csave]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.csave(com.example.demo.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.save(com.example.demo.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.security.core.token.Token)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.save(com.example.demo.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2d1ec9a1: startup date [Thu Jun 07 15:25:00 CST 2018]; root of context hierarchy
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+Creating filter chain: Ant [pattern='/**', OPTIONS], []
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ef2f4c8, org.springframework.security.web.context.SecurityContextPersistenceFilter@10d94cc8, org.springframework.security.web.header.HeaderWriterFilter@4c640aab, org.springframework.security.web.authentication.logout.LogoutFilter@5cec840a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7aef13ba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36c57b64, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61e54824, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@331d5651, org.springframework.security.web.session.SessionManagementFilter@418aeef5, org.springframework.security.web.access.ExceptionTranslationFilter@12a8e1e8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@407dc1f3]
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73bea92, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ef30436, org.springframework.security.web.header.HeaderWriterFilter@31420370, org.springframework.security.web.authentication.logout.LogoutFilter@28a52828, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@29fa1e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a86aee2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bfe6b41, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79375238, org.springframework.security.web.session.SessionManagementFilter@7bd83a68, org.springframework.security.web.access.ExceptionTranslationFilter@41d4b8a2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d07cc66]
+Unable to start LiveReload server
+Registering beans for JMX exposure on startup
+Starting beans in phase 2147483647
+Context refreshed
+Found 1 custom documentation plugin(s)
+Scanning for api listing references
+Initializing ProtocolHandler ["http-nio-8081"]
+Starting ProtocolHandler ["http-nio-8081"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8081 (http)
+Started SellApplication in 14.181 seconds (JVM running for 17.177)
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2d1ec9a1: startup date [Thu Jun 07 15:25:00 CST 2018]; root of context hierarchy
+Stopping beans in phase 2147483647
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on macdeMacBook-Air.local with PID 88001 (/Users/mac/idea-workspace/sell/target/classes started by mac in /Users/mac/idea-workspace/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2654d2c7: startup date [Thu Jun 07 15:26:07 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$be4bd2aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8081 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.27
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1642 ms
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapping filter: 'springSecurityFilterChain' to: [/*]
+Mapping servlet: 'dispatcherServlet' to [/]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2654d2c7: startup date [Thu Jun 07 15:26:07 CST 2018]; root of context hierarchy
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+
+
+Using default security password: 4841de60-cc6d-42e8-b75a-90edefc5dabc
+
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34010dee, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e311735, org.springframework.security.web.header.HeaderWriterFilter@42711698, org.springframework.security.web.authentication.logout.LogoutFilter@7509595e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@13e77075, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@593c0ae0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13330289, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e2902d3, org.springframework.security.web.session.SessionManagementFilter@4ff52534, org.springframework.security.web.access.ExceptionTranslationFilter@6cab7229, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36a9bac3]
+Unable to start LiveReload server
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8081"]
+Starting ProtocolHandler ["http-nio-8081"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8081 (http)
+Started SellApplication in 3.724 seconds (JVM running for 75.923)
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2654d2c7: startup date [Thu Jun 07 15:26:07 CST 2018]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on macdeMacBook-Air.local with PID 88001 (/Users/mac/idea-workspace/sell/target/classes started by mac in /Users/mac/idea-workspace/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f61a2d5: startup date [Thu Jun 07 15:26:14 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$be4bd2aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8081 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.27
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2555 ms
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapping filter: 'springSecurityFilterChain' to: [/*]
+Mapping servlet: 'dispatcherServlet' to [/]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.example.demo.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.example.demo.controller.BuyerOrderController.create(com.example.demo.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.example.demo.VO.ResultVO<com.example.demo.dto.OrderDTO> com.example.demo.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/createCloth],methods=[POST]}" onto public com.example.demo.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.example.demo.controller.BuyerOrderController.createCloth(com.example.demo.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.example.demo.VO.ResultVO<com.example.demo.dto.OrderDTO> com.example.demo.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerProductController.list()
+Mapped "{[/buyer/product/clist],methods=[GET]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerProductController.clist()
+Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.LoginController.login()
+Mapped "{[/seller/category/list]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.save(com.example.demo.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/clist]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.clist(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.modify(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/cmodify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.cmodify(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/csave]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.csave(com.example.demo.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.save(com.example.demo.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.security.core.token.Token)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.save(com.example.demo.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+Starting LoggerTest on macdeMacBook-Air.local with PID 88295 (started by mac in /Users/mac/idea-workspace/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3700ec9c: startup date [Thu Jun 07 15:26:21 CST 2018]; root of context hierarchy
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f61a2d5: startup date [Thu Jun 07 15:26:14 CST 2018]; root of context hierarchy
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+HV000001: Hibernate Validator 5.3.6.Final
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+Creating filter chain: Ant [pattern='/**', OPTIONS], []
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73f6c5cb, org.springframework.security.web.context.SecurityContextPersistenceFilter@698bc73e, org.springframework.security.web.header.HeaderWriterFilter@61b88d3c, org.springframework.security.web.authentication.logout.LogoutFilter@12573c65, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3f5ed170, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@179cdde0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32e87342, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f0898c4, org.springframework.security.web.session.SessionManagementFilter@51ae362c, org.springframework.security.web.access.ExceptionTranslationFilter@35597611, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@411f5a8c]
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b315199, org.springframework.security.web.context.SecurityContextPersistenceFilter@1dc7e7e6, org.springframework.security.web.header.HeaderWriterFilter@7e768dba, org.springframework.security.web.authentication.logout.LogoutFilter@1fb4b2c2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3d6e8e05, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60e84ea3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a390459, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22914dcb, org.springframework.security.web.session.SessionManagementFilter@4a623c7, org.springframework.security.web.access.ExceptionTranslationFilter@6bd2d005, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e67a9b2]
+Unable to start LiveReload server
+Registering beans for JMX exposure on startup
+Starting beans in phase 2147483647
+Context refreshed
+Found 1 custom documentation plugin(s)
+Scanning for api listing references
+Initializing ProtocolHandler ["http-nio-8081"]
+Starting ProtocolHandler ["http-nio-8081"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8081 (http)
+Started SellApplication in 9.268 seconds (JVM running for 88.71)
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6767e4ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.example.demo.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.example.demo.controller.BuyerOrderController.create(com.example.demo.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.example.demo.VO.ResultVO<com.example.demo.dto.OrderDTO> com.example.demo.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/createCloth],methods=[POST]}" onto public com.example.demo.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.example.demo.controller.BuyerOrderController.createCloth(com.example.demo.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.example.demo.VO.ResultVO<com.example.demo.dto.OrderDTO> com.example.demo.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerProductController.list()
+Mapped "{[/buyer/product/clist],methods=[GET]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerProductController.clist()
+Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.LoginController.login()
+Mapped "{[/seller/category/list]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.save(com.example.demo.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.modify(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/clist]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.clist(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/cmodify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.cmodify(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/csave]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.csave(com.example.demo.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.save(com.example.demo.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.security.core.token.Token)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.save(com.example.demo.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3700ec9c: startup date [Thu Jun 07 15:26:21 CST 2018]; root of context hierarchy
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+Creating filter chain: Ant [pattern='/**', OPTIONS], []
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@729a9c3d, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fc56d61, org.springframework.security.web.header.HeaderWriterFilter@3bc3d70e, org.springframework.security.web.authentication.logout.LogoutFilter@654c2f81, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ff53704, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6074d638, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b839f68, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@574327ed, org.springframework.security.web.session.SessionManagementFilter@189e96af, org.springframework.security.web.access.ExceptionTranslationFilter@225ac5e7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1614499b]
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36885319, org.springframework.security.web.context.SecurityContextPersistenceFilter@7591cbd1, org.springframework.security.web.header.HeaderWriterFilter@58b5d5fc, org.springframework.security.web.authentication.logout.LogoutFilter@3023f157, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1f3aa970, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cdc8499, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a30b0cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62a81453, org.springframework.security.web.session.SessionManagementFilter@42536da6, org.springframework.security.web.access.ExceptionTranslationFilter@5b0e5d5f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@102aa5fc]
+Starting beans in phase 2147483647
+Context refreshed
+Found 1 custom documentation plugin(s)
+Scanning for api listing references
+Started LoggerTest in 15.491 seconds (JVM running for 19.511)
+name: firstpassword: 1234556
+name: first, password: 1234556
+name: first, password: 1234556, day: 1831
+Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.repository.OrderDetailRepositoryTest], using SpringBootContextLoader
+Could not detect default resource locations for test class [com.example.demo.repository.OrderDetailRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Could not detect default configuration classes for test class [com.example.demo.repository.OrderDetailRepositoryTest]: OrderDetailRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Found @SpringBootConfiguration com.example.demo.SellApplication for test class com.example.demo.repository.OrderDetailRepositoryTest
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5020e5ab, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@19f1f330, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@143fe09c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@41463c56, org.springframework.test.context.transaction.TransactionalTestExecutionListener@161c9468, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@629de8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6b32b678, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b6683c4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@69abeb14, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7db2b614, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@34d5eac, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2c1a95a2]
+HHH000397: Using ASTQueryTranslatorFactory
+Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.repository.OrderMasterRepositoryTest], using SpringBootContextLoader
+Could not detect default resource locations for test class [com.example.demo.repository.OrderMasterRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Could not detect default configuration classes for test class [com.example.demo.repository.OrderMasterRepositoryTest]: OrderMasterRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Found @SpringBootConfiguration com.example.demo.SellApplication for test class com.example.demo.repository.OrderMasterRepositoryTest
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@12dc702b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@41b2123e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@486bcaa, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5e9671e6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2f3a0f37, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ec8db0c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4f1a5b93, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@22ee1ad7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5dd2ea0a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@65fa4a07, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@782143e8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2a4bd699]
+SQL Error: 1048, SQLState: 23000
+HHH000010: On release of batch it still contained JDBC statements
+Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.repository.ProductCategoryRepositoryTest], using SpringBootContextLoader
+Could not detect default resource locations for test class [com.example.demo.repository.ProductCategoryRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Could not detect default configuration classes for test class [com.example.demo.repository.ProductCategoryRepositoryTest]: ProductCategoryRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Found @SpringBootConfiguration com.example.demo.SellApplication for test class com.example.demo.repository.ProductCategoryRepositoryTest
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@50a095cb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3f2afa8b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6b2efcae, org.springframework.test.context.support.DirtiesContextTestExecutionListener@8aa1562, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5c70c771, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@346690d6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2831c178, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@70e8c019, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2a79da3a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2a191f83, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@c8531b9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3adbd038]
+Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.repository.ProductInfoRepositoryTest], using SpringBootContextLoader
+Could not detect default resource locations for test class [com.example.demo.repository.ProductInfoRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Could not detect default configuration classes for test class [com.example.demo.repository.ProductInfoRepositoryTest]: ProductInfoRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Found @SpringBootConfiguration com.example.demo.SellApplication for test class com.example.demo.repository.ProductInfoRepositoryTest
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3a44993c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b6606d1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@27605b87, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1fc4483f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1d7af82, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5adc71e7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7fc5a558, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@42fd8f2f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7eea934d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4700963e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@153d14e3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3b17759c]
+Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.repository.SellerInfoRepositoryTest], using SpringBootContextLoader
+Could not detect default resource locations for test class [com.example.demo.repository.SellerInfoRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Could not detect default configuration classes for test class [com.example.demo.repository.SellerInfoRepositoryTest]: SellerInfoRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Found @SpringBootConfiguration com.example.demo.SellApplication for test class com.example.demo.repository.SellerInfoRepositoryTest
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@40199d5e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5693d1d2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@571c7572, org.springframework.test.context.support.DirtiesContextTestExecutionListener@c6a3f47, org.springframework.test.context.transaction.TransactionalTestExecutionListener@15a0f9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4840ec68, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7cc3a7f7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@210e2f2f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@c31419f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@43dddfdd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@22c0344e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7267006e]
+Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.SellApplicationTests], using SpringBootContextLoader
+Could not detect default resource locations for test class [com.example.demo.SellApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+Could not detect default configuration classes for test class [com.example.demo.SellApplicationTests]: SellApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Found @SpringBootConfiguration com.example.demo.SellApplication for test class com.example.demo.SellApplicationTests
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@76cbee13, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@59d09ff3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@17d0d3d7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@39fc17be, org.springframework.test.context.transaction.TransactionalTestExecutionListener@106edde4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4d9cf71d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5c43cb12, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5db66c3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@633c0a61, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@49322d04, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@b6b746b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@55d8f6bb]
+Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.service.Impl.CategoryServiceImplTest], using SpringBootContextLoader
+Could not detect default resource locations for test class [com.example.demo.service.Impl.CategoryServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Could not detect default configuration classes for test class [com.example.demo.service.Impl.CategoryServiceImplTest]: CategoryServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Found @SpringBootConfiguration com.example.demo.SellApplication for test class com.example.demo.service.Impl.CategoryServiceImplTest
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@25b402ea, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2fccd98f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@309e7215, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b30b6f8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1e965426, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@575fe6da, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@149238fe, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@a0bdbe2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@261099e1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@ed1d2cf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@b814e23, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5f81507a]
+Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.service.Impl.CproductServiceImplTest], using SpringBootContextLoader
+Could not detect default resource locations for test class [com.example.demo.service.Impl.CproductServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Could not detect default configuration classes for test class [com.example.demo.service.Impl.CproductServiceImplTest]: CproductServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Found @SpringBootConfiguration com.example.demo.SellApplication for test class com.example.demo.service.Impl.CproductServiceImplTest
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@44e7c06b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@24a807a9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@aca594d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@736f2fb8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@9715d26, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6d8096ee, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@35d8ba22, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3fc051ce, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3c5bb37d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@558575fe, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@25fcdcc6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@180fb796]
+Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.service.Impl.OrderServiceImplTest], using SpringBootContextLoader
+Could not detect default resource locations for test class [com.example.demo.service.Impl.OrderServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Could not detect default configuration classes for test class [com.example.demo.service.Impl.OrderServiceImplTest]: OrderServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Found @SpringBootConfiguration com.example.demo.SellApplication for test class com.example.demo.service.Impl.OrderServiceImplTest
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1ba98508, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4b552b13, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@524dd373, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5ca3acad, org.springframework.test.context.transaction.TransactionalTestExecutionListener@b75f3f4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@691a5c3a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5570dc21, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1477d4e6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@30b97fcf, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@b791e6e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@583b4af4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@72c175f1]
+SQL Error: 1048, SQLState: 23000
+HHH000010: On release of batch it still contained JDBC statements
+Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.service.Impl.ProductServerImplTest], using SpringBootContextLoader
+Could not detect default resource locations for test class [com.example.demo.service.Impl.ProductServerImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Could not detect default configuration classes for test class [com.example.demo.service.Impl.ProductServerImplTest]: ProductServerImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Found @SpringBootConfiguration com.example.demo.SellApplication for test class com.example.demo.service.Impl.ProductServerImplTest
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4fd00e10, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7be1e187, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1107c465, org.springframework.test.context.support.DirtiesContextTestExecutionListener@64df8422, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2b30b627, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5fa9971f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@70a24463, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@684430c1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@46eb2260, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@556944cd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@370a935f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7e017f47]
+Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.service.Impl.ProductServiceImplTest], using SpringBootContextLoader
+Could not detect default resource locations for test class [com.example.demo.service.Impl.ProductServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Could not detect default configuration classes for test class [com.example.demo.service.Impl.ProductServiceImplTest]: ProductServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Found @SpringBootConfiguration com.example.demo.SellApplication for test class com.example.demo.service.Impl.ProductServiceImplTest
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6a262980, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@10230657, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@48a21ea6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@394e504d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@62ff14cd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6ae6a77b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@32e9c3af, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@796e2187, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@632d1b1b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3c2fa57a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4027edeb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@48cd8e71]
+Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.service.Impl.SellerServiceImplTest], using SpringBootContextLoader
+Could not detect default resource locations for test class [com.example.demo.service.Impl.SellerServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Could not detect default configuration classes for test class [com.example.demo.service.Impl.SellerServiceImplTest]: SellerServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+Found @SpringBootConfiguration com.example.demo.SellApplication for test class com.example.demo.service.Impl.SellerServiceImplTest
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@18adc20a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7e7987b8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6bcfb561, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7254a68a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@49f9758, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@36e98434, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@209b4b35, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@77acc95a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@ff1a5a0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@75c3584e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@f7b7720, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1e0c898c]
+Closing org.springframework.web.context.support.GenericWebApplicationContext@3700ec9c: startup date [Thu Jun 07 15:26:21 CST 2018]; root of context hierarchy
+Stopping beans in phase 2147483647
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f61a2d5: startup date [Thu Jun 07 15:26:14 CST 2018]; root of context hierarchy
+Stopping beans in phase 2147483647
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on macdeMacBook-Air.local with PID 89367 (/Users/mac/idea-workspace/sell/target/classes started by mac in /Users/mac/idea-workspace/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ca806b3: startup date [Thu Jun 07 15:32:04 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$987232e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8081 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.27
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 3717 ms
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapping filter: 'springSecurityFilterChain' to: [/*]
+Mapping servlet: 'dispatcherServlet' to [/]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.example.demo.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.example.demo.controller.BuyerOrderController.create(com.example.demo.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.example.demo.VO.ResultVO<com.example.demo.dto.OrderDTO> com.example.demo.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/createCloth],methods=[POST]}" onto public com.example.demo.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.example.demo.controller.BuyerOrderController.createCloth(com.example.demo.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.example.demo.VO.ResultVO<com.example.demo.dto.OrderDTO> com.example.demo.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerProductController.list()
+Mapped "{[/buyer/product/clist],methods=[GET]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerProductController.clist()
+Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.LoginController.login()
+Mapped "{[/seller/category/list]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.save(com.example.demo.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/clist]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.clist(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.modify(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/cmodify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.cmodify(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/csave]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.csave(com.example.demo.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.save(com.example.demo.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.security.core.token.Token)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.save(com.example.demo.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ca806b3: startup date [Thu Jun 07 15:32:04 CST 2018]; root of context hierarchy
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+Creating filter chain: Ant [pattern='/**', OPTIONS], []
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@210c2d35, org.springframework.security.web.context.SecurityContextPersistenceFilter@1dc10e3a, org.springframework.security.web.header.HeaderWriterFilter@57393874, org.springframework.security.web.authentication.logout.LogoutFilter@7f24d390, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d84b90a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c846e8c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@130f9c2a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67af0a4e, org.springframework.security.web.session.SessionManagementFilter@158f0676, org.springframework.security.web.access.ExceptionTranslationFilter@3a00ae4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@358d5651]
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3db93874, org.springframework.security.web.context.SecurityContextPersistenceFilter@54e30748, org.springframework.security.web.header.HeaderWriterFilter@c59019f, org.springframework.security.web.authentication.logout.LogoutFilter@44d6d016, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2cfc6a76, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39530b46, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d42a00a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d0e97fe, org.springframework.security.web.session.SessionManagementFilter@45823ff3, org.springframework.security.web.access.ExceptionTranslationFilter@51479349, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@adb0aee]
+Unable to start LiveReload server
+Registering beans for JMX exposure on startup
+Starting beans in phase 2147483647
+Context refreshed
+Found 1 custom documentation plugin(s)
+Scanning for api listing references
+Generating unique operation named: listUsingGET_1
+Generating unique operation named: clistUsingGET_1
+Generating unique operation named: listUsingGET_2
+Generating unique operation named: listUsingGET_3
+Generating unique operation named: saveUsingPOST_1
+Generating unique operation named: detailUsingGET_1
+Generating unique operation named: listUsingGET_4
+Generating unique operation named: indexUsingGET_1
+Generating unique operation named: indexUsingHEAD_1
+Generating unique operation named: indexUsingPOST_1
+Generating unique operation named: indexUsingPUT_1
+Generating unique operation named: indexUsingPATCH_1
+Generating unique operation named: indexUsingDELETE_1
+Generating unique operation named: indexUsingOPTIONS_1
+Generating unique operation named: indexUsingTRACE_1
+Generating unique operation named: listUsingGET_5
+Generating unique operation named: offSaleUsingGET_1
+Generating unique operation named: offSaleUsingHEAD_1
+Generating unique operation named: offSaleUsingPOST_1
+Generating unique operation named: offSaleUsingPUT_1
+Generating unique operation named: offSaleUsingPATCH_1
+Generating unique operation named: offSaleUsingDELETE_1
+Generating unique operation named: offSaleUsingOPTIONS_1
+Generating unique operation named: offSaleUsingTRACE_1
+Generating unique operation named: onSaleUsingGET_1
+Generating unique operation named: onSaleUsingHEAD_1
+Generating unique operation named: onSaleUsingPOST_1
+Generating unique operation named: onSaleUsingPUT_1
+Generating unique operation named: onSaleUsingPATCH_1
+Generating unique operation named: onSaleUsingDELETE_1
+Generating unique operation named: onSaleUsingOPTIONS_1
+Generating unique operation named: onSaleUsingTRACE_1
+Generating unique operation named: saveUsingPOST_2
+Initializing ProtocolHandler ["http-nio-8081"]
+Starting ProtocolHandler ["http-nio-8081"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8081 (http)
+Started SellApplication in 10.613 seconds (JVM running for 11.815)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 78 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ca806b3: startup date [Thu Jun 07 15:32:04 CST 2018]; root of context hierarchy
+Stopping beans in phase 2147483647
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on macdeMacBook-Air.local with PID 90983 (/Users/mac/idea-workspace/sell/target/classes started by mac in /Users/mac/idea-workspace/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@13263a17: startup date [Thu Jun 07 15:40:19 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d500d4c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8081 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.27
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 4537 ms
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapping filter: 'springSecurityFilterChain' to: [/*]
+Mapping servlet: 'dispatcherServlet' to [/]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.example.demo.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.example.demo.controller.BuyerOrderController.create(com.example.demo.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.example.demo.VO.ResultVO<com.example.demo.dto.OrderDTO> com.example.demo.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/createCloth],methods=[POST]}" onto public com.example.demo.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.example.demo.controller.BuyerOrderController.createCloth(com.example.demo.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.example.demo.VO.ResultVO<com.example.demo.dto.OrderDTO> com.example.demo.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerProductController.list()
+Mapped "{[/buyer/product/clist],methods=[GET]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerProductController.clist()
+Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.LoginController.login()
+Mapped "{[/seller/category/list]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.save(com.example.demo.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/clist]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.clist(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.modify(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/cmodify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.cmodify(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/csave]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.csave(com.example.demo.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.save(com.example.demo.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.security.core.token.Token)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.save(com.example.demo.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@13263a17: startup date [Thu Jun 07 15:40:19 CST 2018]; root of context hierarchy
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+Creating filter chain: Ant [pattern='/**', OPTIONS], []
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d37a80, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c1e1a13, org.springframework.security.web.header.HeaderWriterFilter@20f716de, org.springframework.security.web.authentication.logout.LogoutFilter@2b424aaa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@58fa06eb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f36e2a9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@fba956b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@be23b28, org.springframework.security.web.session.SessionManagementFilter@3f081b89, org.springframework.security.web.access.ExceptionTranslationFilter@29e7ec4d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@11f443bf]
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b75d4e2, org.springframework.security.web.context.SecurityContextPersistenceFilter@4756276d, org.springframework.security.web.header.HeaderWriterFilter@64ab675b, org.springframework.security.web.authentication.logout.LogoutFilter@7ae2b4c9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3c6568fe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f38fdea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7016cae9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3970201d, org.springframework.security.web.session.SessionManagementFilter@4a57d266, org.springframework.security.web.access.ExceptionTranslationFilter@f00ecc9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@692091ac]
+Unable to start LiveReload server
+Registering beans for JMX exposure on startup
+Starting beans in phase 2147483647
+Context refreshed
+Found 1 custom documentation plugin(s)
+Scanning for api listing references
+Generating unique operation named: listUsingGET_1
+Generating unique operation named: clistUsingGET_1
+Generating unique operation named: listUsingGET_2
+Generating unique operation named: listUsingGET_3
+Generating unique operation named: saveUsingPOST_1
+Generating unique operation named: detailUsingGET_1
+Generating unique operation named: listUsingGET_4
+Generating unique operation named: indexUsingGET_1
+Generating unique operation named: indexUsingHEAD_1
+Generating unique operation named: indexUsingPOST_1
+Generating unique operation named: indexUsingPUT_1
+Generating unique operation named: indexUsingPATCH_1
+Generating unique operation named: indexUsingDELETE_1
+Generating unique operation named: indexUsingOPTIONS_1
+Generating unique operation named: indexUsingTRACE_1
+Generating unique operation named: listUsingGET_5
+Generating unique operation named: offSaleUsingGET_1
+Generating unique operation named: offSaleUsingHEAD_1
+Generating unique operation named: offSaleUsingPOST_1
+Generating unique operation named: offSaleUsingPUT_1
+Generating unique operation named: offSaleUsingPATCH_1
+Generating unique operation named: offSaleUsingDELETE_1
+Generating unique operation named: offSaleUsingOPTIONS_1
+Generating unique operation named: offSaleUsingTRACE_1
+Generating unique operation named: onSaleUsingGET_1
+Generating unique operation named: onSaleUsingHEAD_1
+Generating unique operation named: onSaleUsingPOST_1
+Generating unique operation named: onSaleUsingPUT_1
+Generating unique operation named: onSaleUsingPATCH_1
+Generating unique operation named: onSaleUsingDELETE_1
+Generating unique operation named: onSaleUsingOPTIONS_1
+Generating unique operation named: onSaleUsingTRACE_1
+Generating unique operation named: saveUsingPOST_2
+Initializing ProtocolHandler ["http-nio-8081"]
+Starting ProtocolHandler ["http-nio-8081"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8081 (http)
+Started SellApplication in 16.723 seconds (JVM running for 18.154)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 60 ms
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@13263a17: startup date [Thu Jun 07 15:40:19 CST 2018]; root of context hierarchy
+Stopping beans in phase 2147483647
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on macdeMacBook-Air.local with PID 90983 (/Users/mac/idea-workspace/sell/target/classes started by mac in /Users/mac/idea-workspace/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2776e321: startup date [Thu Jun 07 15:43:11 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d500d4c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8081 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.27
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1786 ms
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapping filter: 'springSecurityFilterChain' to: [/*]
+Mapping servlet: 'dispatcherServlet' to [/]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.example.demo.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.example.demo.controller.BuyerOrderController.create(com.example.demo.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.example.demo.VO.ResultVO<com.example.demo.dto.OrderDTO> com.example.demo.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/createCloth],methods=[POST]}" onto public com.example.demo.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.example.demo.controller.BuyerOrderController.createCloth(com.example.demo.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.example.demo.VO.ResultVO<com.example.demo.dto.OrderDTO> com.example.demo.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerProductController.list()
+Mapped "{[/buyer/product/clist],methods=[GET]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerProductController.clist()
+Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.LoginController.login()
+Mapped "{[/seller/cproduct/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.save(com.example.demo.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.security.core.token.Token)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.save(com.example.demo.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2776e321: startup date [Thu Jun 07 15:43:11 CST 2018]; root of context hierarchy
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+Creating filter chain: Ant [pattern='/**', OPTIONS], []
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ea66925, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f040c8a, org.springframework.security.web.header.HeaderWriterFilter@67f9d7b3, org.springframework.security.web.authentication.logout.LogoutFilter@c34d844, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1b26969f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b18d511, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5275c18e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7bea2421, org.springframework.security.web.session.SessionManagementFilter@fbdc98, org.springframework.security.web.access.ExceptionTranslationFilter@63a8e211, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@52676ed1]
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bdd5ea5, org.springframework.security.web.context.SecurityContextPersistenceFilter@319c8b7a, org.springframework.security.web.header.HeaderWriterFilter@1fe8ebe6, org.springframework.security.web.authentication.logout.LogoutFilter@3d66d250, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@68f449dd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cb673b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4590413, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69f7a6de, org.springframework.security.web.session.SessionManagementFilter@29820088, org.springframework.security.web.access.ExceptionTranslationFilter@60d6958, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a0a85b0]
+Unable to start LiveReload server
+Registering beans for JMX exposure on startup
+Starting beans in phase 2147483647
+Context refreshed
+Found 1 custom documentation plugin(s)
+Scanning for api listing references
+Generating unique operation named: listUsingGET_1
+Generating unique operation named: listUsingGET_2
+Generating unique operation named: detailUsingGET_1
+Generating unique operation named: listUsingGET_3
+Generating unique operation named: indexUsingGET_1
+Generating unique operation named: indexUsingHEAD_1
+Generating unique operation named: indexUsingPOST_1
+Generating unique operation named: indexUsingPUT_1
+Generating unique operation named: indexUsingPATCH_1
+Generating unique operation named: indexUsingDELETE_1
+Generating unique operation named: indexUsingOPTIONS_1
+Generating unique operation named: indexUsingTRACE_1
+Generating unique operation named: listUsingGET_4
+Generating unique operation named: offSaleUsingGET_1
+Generating unique operation named: offSaleUsingHEAD_1
+Generating unique operation named: offSaleUsingPOST_1
+Generating unique operation named: offSaleUsingPUT_1
+Generating unique operation named: offSaleUsingPATCH_1
+Generating unique operation named: offSaleUsingDELETE_1
+Generating unique operation named: offSaleUsingOPTIONS_1
+Generating unique operation named: offSaleUsingTRACE_1
+Generating unique operation named: onSaleUsingGET_1
+Generating unique operation named: onSaleUsingHEAD_1
+Generating unique operation named: onSaleUsingPOST_1
+Generating unique operation named: onSaleUsingPUT_1
+Generating unique operation named: onSaleUsingPATCH_1
+Generating unique operation named: onSaleUsingDELETE_1
+Generating unique operation named: onSaleUsingOPTIONS_1
+Generating unique operation named: onSaleUsingTRACE_1
+Generating unique operation named: saveUsingPOST_1
+Initializing ProtocolHandler ["http-nio-8081"]
+Starting ProtocolHandler ["http-nio-8081"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8081 (http)
+Started SellApplication in 5.584 seconds (JVM running for 179.236)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2776e321: startup date [Thu Jun 07 15:43:11 CST 2018]; root of context hierarchy
+Stopping beans in phase 2147483647
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on macdeMacBook-Air.local with PID 91765 (/Users/mac/idea-workspace/sell/target/classes started by mac in /Users/mac/idea-workspace/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2016d8a9: startup date [Thu Jun 07 15:44:02 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$323ece3c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8081 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.27
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 4229 ms
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapping filter: 'springSecurityFilterChain' to: [/*]
+Mapping servlet: 'dispatcherServlet' to [/]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+HHH000228: Running hbm2ddl schema update
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.example.demo.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.example.demo.controller.BuyerOrderController.create(com.example.demo.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.example.demo.VO.ResultVO<com.example.demo.dto.OrderDTO> com.example.demo.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.example.demo.VO.ResultVO<com.example.demo.dto.OrderDTO> com.example.demo.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/createCloth],methods=[POST]}" onto public com.example.demo.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.example.demo.controller.BuyerOrderController.createCloth(com.example.demo.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerProductController.list()
+Mapped "{[/buyer/product/clist],methods=[GET]}" onto public com.example.demo.VO.ResultVO com.example.demo.controller.BuyerProductController.clist()
+Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.LoginController.login()
+Mapped "{[/seller/category/list]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/save]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.save(com.example.demo.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/clist]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.clist(java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.modify(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/cmodify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.cmodify(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/category/csave]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCategoryController.csave(com.example.demo.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.save(com.example.demo.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/cproduct/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellCproductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>,org.springframework.security.core.token.Token)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/modify]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.save(com.example.demo.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/on_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/product/off_sale]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2016d8a9: startup date [Thu Jun 07 15:44:02 CST 2018]; root of context hierarchy
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+Creating filter chain: Ant [pattern='/**', OPTIONS], []
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@265ae0fb, org.springframework.security.web.context.SecurityContextPersistenceFilter@65a73c40, org.springframework.security.web.header.HeaderWriterFilter@739ac4d4, org.springframework.security.web.authentication.logout.LogoutFilter@74082319, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@26723a5c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70fec187, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c495766, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47cfbc23, org.springframework.security.web.session.SessionManagementFilter@455a9deb, org.springframework.security.web.access.ExceptionTranslationFilter@5708ab7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@64364fbe]
+Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47148d3c, org.springframework.security.web.context.SecurityContextPersistenceFilter@4bfbcf08, org.springframework.security.web.header.HeaderWriterFilter@4bf639f, org.springframework.security.web.authentication.logout.LogoutFilter@766ee25c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@29beebd5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b155dba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@144978dc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39591874, org.springframework.security.web.session.SessionManagementFilter@11d4ed56, org.springframework.security.web.access.ExceptionTranslationFilter@30e20588, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f30e5b7]
+Unable to start LiveReload server
+Registering beans for JMX exposure on startup
+Starting beans in phase 2147483647
+Context refreshed
+Found 1 custom documentation plugin(s)
+Scanning for api listing references
+Generating unique operation named: listUsingGET_1
+Generating unique operation named: clistUsingGET_1
+Generating unique operation named: listUsingGET_2
+Generating unique operation named: listUsingGET_3
+Generating unique operation named: saveUsingPOST_1
+Generating unique operation named: detailUsingGET_1
+Generating unique operation named: listUsingGET_4
+Generating unique operation named: indexUsingGET_1
+Generating unique operation named: indexUsingHEAD_1
+Generating unique operation named: indexUsingPOST_1
+Generating unique operation named: indexUsingPUT_1
+Generating unique operation named: indexUsingPATCH_1
+Generating unique operation named: indexUsingDELETE_1
+Generating unique operation named: indexUsingOPTIONS_1
+Generating unique operation named: indexUsingTRACE_1
+Generating unique operation named: listUsingGET_5
+Generating unique operation named: offSaleUsingGET_1
+Generating unique operation named: offSaleUsingHEAD_1
+Generating unique operation named: offSaleUsingPOST_1
+Generating unique operation named: offSaleUsingPUT_1
+Generating unique operation named: offSaleUsingPATCH_1
+Generating unique operation named: offSaleUsingDELETE_1
+Generating unique operation named: offSaleUsingOPTIONS_1
+Generating unique operation named: offSaleUsingTRACE_1
+Generating unique operation named: onSaleUsingGET_1
+Generating unique operation named: onSaleUsingHEAD_1
+Generating unique operation named: onSaleUsingPOST_1
+Generating unique operation named: onSaleUsingPUT_1
+Generating unique operation named: onSaleUsingPATCH_1
+Generating unique operation named: onSaleUsingDELETE_1
+Generating unique operation named: onSaleUsingOPTIONS_1
+Generating unique operation named: onSaleUsingTRACE_1
+Generating unique operation named: saveUsingPOST_2
+Initializing ProtocolHandler ["http-nio-8081"]
+Starting ProtocolHandler ["http-nio-8081"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8081 (http)
+Started SellApplication in 14.195 seconds (JVM running for 17.04)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 56 ms

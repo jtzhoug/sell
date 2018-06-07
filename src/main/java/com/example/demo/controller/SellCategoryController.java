@@ -7,6 +7,7 @@ import com.example.demo.exception.SellException;
 import com.example.demo.form.CategoryForm;
 import com.example.demo.repository.ProductCategoryRepository;
 import com.example.demo.service.CategoryService;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -29,6 +30,7 @@ public class SellCategoryController {
     @Autowired
     private ProductCategoryRepository repository;
 
+    @ApiOperation("查询类目列表")
     @RequestMapping("/list")
     public ModelAndView list(Map<String, Object> map) {
         // List<ProductCategory> productCategoryList = categoryService.findAll();

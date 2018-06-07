@@ -10,6 +10,8 @@ import com.example.demo.form.OrderForm;
 import com.example.demo.service.BuyerService;
 import com.example.demo.service.OrderService;
 import com.example.demo.utils.ResultVOUtil;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -37,6 +39,8 @@ public class BuyerOrderController {
     private final String OPENID = "110110";
 
     //    创建订单
+    @ApiOperation("用户创建订单")
+    @ApiImplicitParam(name="orderForm",value = "表单")
     @PostMapping("/create")
     public ResultVO<Map<String,String>> create(@Validated OrderForm orderForm,
                                                BindingResult bindingResult){
